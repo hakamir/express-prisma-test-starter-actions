@@ -40,7 +40,7 @@ describe("Prisma client", () => {
       },
     });
     const nbrOrders = await prisma.order.count();
-    expect(nbrOrders).toBeGreaterThan(1);
+    expect(nbrOrders).toBeGreaterThan(10);
   });
 
   afterAll(async () => {
